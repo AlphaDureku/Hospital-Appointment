@@ -3,11 +3,6 @@ const uuid = require('uuid')
 const Sequelize = require('sequelize')
 
 
-
-
-
-
-
 async function saveQuery(table) {
     try {
         return await table.save()
