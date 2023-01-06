@@ -89,7 +89,6 @@ let ScheduleParams = {
 exports.renderUserDirectory = async(req, res) => {
     // insert.insertHmoList(HMO_List)
     // insert.insertSpecializationList(Specialization_List)
-    //insert.insertDepartmentList(Department_List)
     // for (let i = 0; i < 4; i++) {
     //     insert.InsertDoctor(DoctorParams[i])
     // }

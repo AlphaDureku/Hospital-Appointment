@@ -7,6 +7,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const expressLayouts = require("express-ejs-layouts");
 const session = require('express-session')
+const MemoryStore = require('memorystore')(session)
 const cors = require('cors')
 
 //Import routers
@@ -25,6 +26,9 @@ app.use(cors({
 }))
 app.use(session({
     secret: 'secret-key',
+    store: new MemoryStore({
+        checkPeriod: 1800
+    }),
     resave: true,
     saveUninitialized: false
 }))
